@@ -357,14 +357,15 @@ export default function Design() {
     const day2Points = itineraryData.features.filter((feature) => feature.properties.day === 2);
     const day3Points = itineraryData.features.filter((feature) => feature.properties.day === 3);
 
-    function handleButtonsChange() {
-        if (day === 1) {
+    function handleButtonsChange(x: number) {
+        if (x === 1) {
             setDayPoints(day1Points);
-        } else if (day === 2) {
+        } else if (x === 2) {
             setDayPoints(day2Points);
-        } else if (day === 3) {
+        } else if (x === 3) {
             setDayPoints(day3Points);
         }
+        setDay(x);
     }
 
     const mapRef = React.useRef<MbMap | null>(null);
@@ -641,8 +642,7 @@ export default function Design() {
                     <div className="flex space-x-1 py-2">
                         <button
                             onClick={() => {
-                                setDay(1);
-                                handleButtonsChange();
+                                handleButtonsChange(1);
                                 console.log("Day 1 clicked");
                             }}
                             className="px-4 py-2 rounded-t-lg bg-blue-500 text-white font-medium"
@@ -651,8 +651,7 @@ export default function Design() {
                         </button>
                         <button
                             onClick={() => {
-                                setDay(2);
-                                handleButtonsChange();
+                                handleButtonsChange(2);
                                 console.log("Day 2 clicked");
                             }}
                             className="px-4 py-2 rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -661,8 +660,7 @@ export default function Design() {
                         </button>
                         <button
                             onClick={() => {
-                                setDay(3);
-                                handleButtonsChange();
+                                handleButtonsChange(3);
                                 console.log("Day 3 clicked");
                             }}
                             className="px-4 py-2 rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200"
