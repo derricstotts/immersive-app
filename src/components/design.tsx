@@ -19,12 +19,18 @@ const itineraryData: GeoJSON.FeatureCollection<GeoJSON.Point, any> = {
             type: "Feature",
             properties: {
                 id: 1,
+                time: "9:00 AM",
+                title: "The Sukhothai Hotel",
+                type: "Hotel",
+                Price: 238.44,
+                description: "dates: July 30-Aug 3",
+                Lat: 13.573056,
+                Long: 100.540833,
+                Location: "Bangkok",
+                Website: "https://bangkok.sukhothai.com/en/",
+                Image_URL: "https://drive.google.com/file/d/1YV5oXIK3nZBVeLqhvLNignTgsCrIEPqa/view?usp=sharing",
                 day: 1,
-                title: "Eiffel Tower",
-                time: "09:00 AM",
-                description:
-                    "Start your day at the iconic Eiffel Tower. Don't forget to go to the top for amazing views of Paris.",
-                type: "Landmark",
+                icon_url: "./0.png",
                 media: [
                     {
                         type: "image",
@@ -33,18 +39,27 @@ const itineraryData: GeoJSON.FeatureCollection<GeoJSON.Point, any> = {
                     { type: "video", url: "https://example.com/video1.mp4" },
                 ],
             },
-            geometry: { type: "Point", coordinates: [2.2945, 48.8584] },
+            geometry: { type: "Point", coordinates: [100.540831631282074, 13.723059730997477] },
         },
         {
             type: "Feature",
             properties: {
-                id: 1,
-                day: 1,
-                title: "The Louvre",
-                time: "10:00 AM",
+                id: 2,
+                time: "9:00 AM",
+
+                title: "The Vie Hotel -MGallery",
+                type: "Hotel",
+                Price: 333.17,
                 description:
-                    "Start your day at the iconic Big Ben. Don't forget to go to the top for amazing views of London.",
-                type: "Landmark",
+                    "NULLBoutique. has 1 michelin star 6&8 course dinner restuarant. a sushit bar, an all day bistro and food at pool. located in middle of Bangkok",
+                Lat: 13.750556,
+                Long: 100.531944,
+                Location: "Bangkok",
+                Website:
+                    "https://all.accor.com/hotel/6469/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps",
+                Image_URL: "https://drive.google.com/file/d/1oc1cO9aih_HREO67859nzj0nCPs1_Shf/view?usp=sharing",
+                day: 2,
+                icon_url: "./0.png",
                 media: [
                     {
                         type: "image",
@@ -53,15 +68,304 @@ const itineraryData: GeoJSON.FeatureCollection<GeoJSON.Point, any> = {
                     { type: "video", url: "https://example.com/video1.mp4" },
                 ],
             },
-            geometry: { type: "Point", coordinates: [2.3376, 48.8606] },
+            geometry: { type: "Point", coordinates: [100.531944444444434, 13.750557232987633] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 3,
+                time: "9:00 AM",
+
+                title: "The Lebua Hotel",
+                type: "Hotel",
+                Price: 201.98,
+                description:
+                    "michelin star chefs & restuarants. towever design puts all the lounges and restuarants on differnt floors. rooftop bar.loung.",
+                Lat: 13.721389,
+                Long: 100.516667,
+                Location: "Bangkok",
+                Website: "https://lebua.com",
+                Image_URL: "https://drive.google.com/file/d/1FqdX8WaeKuL08sSKx9hmiPf55D-DRVmN/view?usp=sharing",
+                day: 2,
+                icon_url: "./0.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.516666666666637, 13.721383855966346] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 4,
+                time: "9:00 AM",
+
+                title: "Myste",
+                type: "Resturant",
+                Price: null,
+                description:
+                    "Cave Restaurant. hours: 11AM - 7:15PM daily. lots of tiny fusion plates. looks like we'll be hungry when its over. has tasting menus.",
+                Lat: 13.800833,
+                Long: 100.311667,
+                Location: "Bangkok",
+                Website: "https://web.hungryhub.com/en/restaurants/myste/web?rd=0",
+                Image_URL: null,
+                day: 3,
+                icon_url: "./1.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.311666666666667, 13.800827667552049] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 5,
+                title: "Vertigo Too",
+                type: "Resturant",
+                time: "9:00 AM",
+
+                Price: 78.11,
+                description: "dinner 630-1030PM. dress is smart casual. asian/western food",
+                Lat: 13.723611,
+                Long: 100.539444,
+                Location: "Bangkok",
+                Website: "https://www.banyantree.com/thailand/bangkok/dining/vertigo-too",
+                Image_URL: null,
+                day: 1,
+                icon_url: "./1.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.53945027865457, 13.723605443459219] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 6,
+                title: "Expresso",
+                type: "Resturant",
+                time: "9:00 AM",
+
+                Price: 67.08,
+                description:
+                    "Friday & Saturday. located on the Mezzanine level of the Intercontinental. live jazz music. 6-1030PM.",
+                Lat: 13.7225,
+                Long: 100.581389,
+                Location: "Bangkok",
+                Website:
+                    "https://bangkok.intercontinental.com/special-offers-and-experiences/premium-seafood-dinner-buffet-at-espresso",
+                Image_URL: null,
+                day: 3,
+                icon_url: "./1.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.581392140208692, 13.722507416797498] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 7,
+                title: "Sol & Luna",
+                type: "Bar",
+                time: "9:00 AM",
+
+                Price: null,
+                description:
+                    "360 views. Sol is the restaurant (11:30AM - 11PM) and Luna is the rooftop (5PM - 2AM). Live music 7-9PM Thurs-Sat",
+                Lat: 13.736667,
+                Long: 100.5975,
+                Location: "Bangkok",
+                Website: "NULhttps://www.aspira-hotels.com/hotels/glow-sukhumvit-71/L",
+                Image_URL: null,
+                day: 2,
+                icon_url: "./2.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.5975, 13.736660829478728] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 8,
+                title: "Tichuca Skybar",
+                type: "Bar",
+                time: "9:00 AM",
+
+                Price: null,
+                description: "Hours: 5PM on. ID/passport for entry. Greenery terrace vibe. 360 views",
+                Lat: 13.722222,
+                Long: 100.581944,
+                Location: "Bangkok",
+                Website: "https://www.tichuca.co",
+                Image_URL: null,
+                day: 1,
+                icon_url: "./2.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.580555555555534, 13.722216384674738] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 9,
+                title: "Pastel Rooftop Bar",
+                type: "Bar",
+                time: "9:00 AM",
+
+                Price: null,
+                description: "mediterranean inspired. Lobster & champagne tuesdays",
+                Lat: 13.7425,
+                Long: 100.556389,
+                Location: "Bangkok",
+                Website: "https://www.pastelbangkok.com \t",
+                Image_URL: null,
+                day: 2,
+                icon_url: "./2.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.556382879825932, 13.742505837042483] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 10,
+                title: "Lacol Rooftop Bar",
+                type: "Bar",
+                time: "9:00 AM",
+
+                Price: null,
+                description: "has the cinderellea pumpkin looking clear pod/table",
+                Lat: 13.728333,
+                Long: 100.580278,
+                Location: "Bangkok",
+                Website: "https://www.instagram.com/lacolbangkok/",
+                Image_URL: null,
+                day: 1,
+                icon_url: "./2.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.580277777777781, 13.728327495937922] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 11,
+                title: "Tribe Sky Beach CLub",
+                type: "Bar",
+                time: "9:00 AM",
+
+                Price: null,
+                description:
+                    "beach club open from 11AM -1AM. reservations recommended by people. check FB page for event flyers and phone number for possible reservations. has IG as well but not as up to date and FB",
+                Lat: 13.731944,
+                Long: 100.566667,
+                Location: "Bangkok",
+                Website: "https://tribeskybeachclub.com/?utm_source=google&utm_medium=organic&utm_campaign=google_maps",
+                Image_URL: null,
+                day: 2,
+                icon_url: "./2.png",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+            },
+            geometry: { type: "Point", coordinates: [100.566666666666663, 13.731950281749819] },
+        },
+        {
+            type: "Feature",
+            properties: {
+                id: 12,
+                title: "Seen Resturant and Bar",
+                type: "Bar",
+                time: "9:00 AM",
+
+                Price: null,
+                description:
+                    "considered a bit pricey for food: $80 steak, $50 crab risotto. has pool. open daily 11AM-1AM. portuguese/brazillian menu. level entertainment and music",
+                Location: "Bangkok",
+                Website: "https://www.seenrooftopbangkok.com",
+                media: [
+                    {
+                        type: "image",
+                        url: "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+                    },
+                    { type: "video", url: "https://example.com/video1.mp4" },
+                ],
+                day: 1,
+                icon_url: "./2.png",
+            },
+            geometry: { type: "Point", coordinates: [100.49115428022732, 13.705240906626676] },
         },
     ],
 };
 
 export default function Design() {
     const [day, setDay] = useState(1);
+    const [dayPoints, setDayPoints] = useState(
+        itineraryData.features.filter((feature) => feature.properties.day === day)
+    );
 
-    const day1Points = 
+    const day1Points = itineraryData.features.filter((feature) => feature.properties.day === 1);
+    const day2Points = itineraryData.features.filter((feature) => feature.properties.day === 2);
+    const day3Points = itineraryData.features.filter((feature) => feature.properties.day === 3);
+
+    function handleButtonsChange() {
+        if (day === 1) {
+            setDayPoints(day1Points);
+        } else if (day === 2) {
+            setDayPoints(day2Points);
+        } else if (day === 3) {
+            setDayPoints(day3Points);
+        }
+    }
 
     const mapRef = React.useRef<MbMap | null>(null);
     const mapDivRef = React.useRef<HTMLDivElement | null>(null);
@@ -148,7 +452,7 @@ export default function Design() {
 
             const popupHtml = `
         <div class="w-64">
-          <h3 class="font-bold text-lg">${title}</h3>
+          <h3 class="font-bold text-black text-lg">${title}</h3>
           <div class="flex items-center text-sm text-gray-600 mb-2">
             <i data-feather="${type === "Landmark" ? "map-pin" : "coffee"}" class="w-4 h-4 mr-1"></i>
             <span>${type} • ${time}</span>
@@ -246,7 +550,7 @@ export default function Design() {
     // Build itinerary list items
     const ItineraryList = () => (
         <>
-            {itineraryData.features.map((feature) => {
+            {dayPoints.map((feature) => {
                 const { title, time, description, type, media } = feature.properties;
                 return (
                     <div
@@ -267,7 +571,7 @@ export default function Design() {
                                 <i data-feather={type === "Landmark" ? "map-pin" : "coffee"} className="w-4 h-4" />
                             </div>
                             <div>
-                                <h3 className="font-medium">{title}</h3>
+                                <h3 className="text-black font-bold">{title}</h3>
                                 <p className="text-sm text-gray-500">{time}</p>
                                 <p className="text-gray-700 mt-1 text-sm">{String(description).slice(0, 100)}...</p>
                                 {media?.length > 0 && (
@@ -338,6 +642,7 @@ export default function Design() {
                         <button
                             onClick={() => {
                                 setDay(1);
+                                handleButtonsChange();
                                 console.log("Day 1 clicked");
                             }}
                             className="px-4 py-2 rounded-t-lg bg-blue-500 text-white font-medium"
@@ -347,6 +652,7 @@ export default function Design() {
                         <button
                             onClick={() => {
                                 setDay(2);
+                                handleButtonsChange();
                                 console.log("Day 2 clicked");
                             }}
                             className="px-4 py-2 rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -356,6 +662,7 @@ export default function Design() {
                         <button
                             onClick={() => {
                                 setDay(3);
+                                handleButtonsChange();
                                 console.log("Day 3 clicked");
                             }}
                             className="px-4 py-2 rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200"
